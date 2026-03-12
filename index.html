@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For my Fav. person</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family:Arial;
+text-align:center;
+color:white;
+height:100vh;
+overflow:auto;
+background:linear-gradient(135deg,#ff7eb3,#8e6cff);
+}
+
+/* emoji background */
+
+.emoji{
+position:fixed;
+font-size:28px;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);opacity:0;}
+50%{opacity:1;}
+100%{transform:translateY(-10vh);opacity:0;}
+}
+
+/* container */
+
+.container{
+margin-top:120px;
+padding:20px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:25px;
+background:white;
+color:#8e6cff;
+cursor:pointer;
+margin:10px;
+}
+
+button:hover{
+background:#ffe6f7;
+}
+
+/* message */
+
+#message{
+margin-top:20px;
+font-size:18px;
+line-height:1.7;
+display:none;
+}
+
+/* love animation */
+
+#love{
+font-size:45px;
+margin-top:30px;
+display:none;
+animation:loveAnim 2s infinite alternate;
+background:linear-gradient(90deg,#ff4b91,#ff8a00,#ffd93d,#6cffc1,#7b7bff);
+background-clip: text;
+-webkit-background-clip:text;
+color:transparent;
+}
+
+@keyframes loveAnim{
+0%{transform:scale(1);}
+100%{transform:scale(1.3);}
+}
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:15px;
+font-size:24px;
+font-weight:bold;
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(5px);
+color:white;
+letter-spacing:1px;
+}
+@media (max-width:600px){
+
+h1{
+font-size:28px;
+}
+
+button{
+font-size:16px;
+padding:10px 20px;
+}
+
+#message{
+font-size:16px;
+}
+
+#love{
+font-size:32px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<header>
+    It's for you Mrs. Halima Tuj Sumaia👀.
+</header>
+<!-- Emoji background -->
+<div class="emoji" style="left:10%">💜</div>
+<div class="emoji" style="left:25%;animation-delay:2s;">😘</div>
+<div class="emoji" style="left:40%;animation-delay:4s;">💖</div>
+<div class="emoji" style="left:55%;animation-delay:1s;">💜</div>
+<div class="emoji" style="left:70%;animation-delay:3s;">😘</div>
+<div class="emoji" style="left:85%;animation-delay:5s;">💖</div>
+
+<div class="container">
+
+<h1>🎉 Happy Birthday Dear Bow 🎉</h1>
+
+<button onclick="showWish()">Click for Wish</button>
+
+<div id="message">
+I pray that you always stay happy and may all your dreams come true🥹.  
+You deserve a thank you for coming into my life and supporting me so nicely🫶😭.  
+I know I’m out of your expectations😞, but the way you love me now❤️🩹,  
+Please always love me the same way💜🙌.  
+
+I have just one wish to always be with you and celebrate all your upcoming birthdays with you😩🫶.  
+Will you stay with me🐱🤌??  
+
+The Birthday wish may be small💔, but wishing you a very nice Happy birthday😭🙌.  
+
+Overall, I love you so so much, even though sometimes I say silly things and hurt you💔😞.  
+But still I love you so muchhhh….❤️🩹🫶  
+
+Again wishing you a Happy Birthday and love youuu😭💜😭.
+<br><br>
+
+<button onclick="showLove()">Click for Surprise</button>
+
+</div>
+
+<div id="love">Surprise naiii🥲 but <br>
+💖😩 LOVE YOUUUU DEAR BOWWW 🥹💖
+</div>
+
+</div>
+
+<script>
+
+function showWish(){
+document.getElementById("message").style.display="block";
+}
+
+function showLove(){
+document.getElementById("love").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
